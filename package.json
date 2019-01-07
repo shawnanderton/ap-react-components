@@ -16,8 +16,11 @@
         "pluralsight"
     ],
     "dependencies": {
-        "react": "^15.5.4",
-        "react-dom": "^15.5.4",
+        "@material-ui/core": "^3.8.1",
+        "@material-ui/icons": "^3.0.1",
+        "@material-ui/lab": "^3.0.0-alpha.27",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
         "styled-components": "^1.4.5"
     },
     "devDependencies": {
@@ -44,7 +47,7 @@
         "eslint-config-react-app": "^0.6.2",
         "eslint-loader": "1.6.0",
         "eslint-plugin-flowtype": "2.21.0",
-        "eslint-plugin-import": "2.0.1",
+        "eslint-plugin-import": "^2.14.0",
         "eslint-plugin-jsx-a11y": "4.0.0",
         "eslint-plugin-react": "6.4.1",
         "extract-text-webpack-plugin": "1.0.1",
