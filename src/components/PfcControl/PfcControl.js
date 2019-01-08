@@ -3,7 +3,7 @@ import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import { Button } from '@material-ui/core';
 
-const PfcControl = prop => {
+const PfcControl = () => {
     let passed = { color: 'black', backgroundColor: '#40AF48', opacity: false ? 1 : 0.4 };
     let caution = { color: 'black', backgroundColor: '#E8A543', opacity: false ? 1 : 0.4 };
     let failed = { color: 'black', backgroundColor: '#B20909', opacity: true ? 1 : 0.4 };
@@ -21,9 +21,11 @@ const PfcControl = prop => {
 
     return (
         <div>
-            <Button color="primary">Test</Button>
+            <Button variant="contained" color="secondary">
+                Test
+            </Button>
             <ToggleButtonGroup onChange={changed}>
-                <ToggleButton color="main" value="Pass">
+                <ToggleButton variant="contained" color="test" value="Pass">
                     Pass
                 </ToggleButton>
                 <ToggleButton style={caution} value="Caution" selected={true}>
